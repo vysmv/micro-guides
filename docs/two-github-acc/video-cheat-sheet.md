@@ -83,7 +83,7 @@ git clone git@personal_gh:vysmv/micro-guides.git
 Затем клонируем (находясь в директории ~/code/work):
 
 ```bash
-git clone git@github-work:work_gh-org/work-repo.git
+git clone git@work_gh:demo-work-org/work-repo.git
 ```
 
 ## Шаг 7 
