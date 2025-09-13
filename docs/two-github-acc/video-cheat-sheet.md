@@ -15,7 +15,7 @@ ssh-keygen -t ed25519 -C "work_gh" -f ~/.ssh/id_ed25519_work_gh
 
 ## Шаг 3
 
-Создаем конфиг ~/.ssh/config
+Создаём конфиг ~/.ssh/config:
 
 ```bash
 # Личный GitHub
@@ -35,7 +35,7 @@ Host work_gh
 
 ## Шаг 4
 
-Вносим ключи в аккаунты github
+Вносим ключи в аккаунты GitHub:
 
 ```bash
 [Личный аккаунт → Settings → SSH and GPG keys → New SSH key] [personal_gh]
@@ -44,7 +44,7 @@ Host work_gh
 
 ## Шаг 5
 
-Создаем конфиг ~/.gitconfig
+Создаём конфиг ~/.gitconfig:
 
 ```bash
 [user]
@@ -62,7 +62,7 @@ Host work_gh
   path = /home/vitaliy/.gitconfig-work
 ```
 
-Создаем конфиг ~/.gitconfig-work
+Создаём конфиг ~/.gitconfig-work:
 
 ```bash
 [user]
@@ -74,7 +74,7 @@ Host work_gh
 ## Шаг 6 
 > **Важно!**
 > 
-> Если до того как мы сгенерировали новые ключи и создали новые конфиги у нас уже были старые проекты которые работали со старыми адресами в remote, то их нужно обновить. 
+> Если до того, как мы сгенерировали новые ключи и создали новые конфиги, у нас уже были старые проекты, которые работали со старыми адресами в remote, их нужно обновить.
 > Заходим в один из старых проектов и вводим:
 
 ```bash
@@ -87,33 +87,33 @@ origin  git@github.com:vysmv/notes-about-go.git (fetch)
 origin  git@github.com:vysmv/notes-about-go.git (push)
 ```
 
-То есть со старым хостом “github.com”, то нужно выполнить 
+то есть со старым хостом «github.com», нужно выполнить:
 
 ```bash
 git remote set-url origin personal_gh:vysmv/notes-about-go.git
 git remote set-url --push origin personal_gh:vysmv/notes-about-go.git
 ```
 
-И тестируем
+И тестируем:
 
 ```bash
 git remote -v
 ssh -T personal-gh
 ```
 
-Тут первая команда покажет обновленные хосты, а вторая поприветствует вас по имени пользователя. 
+Первая команда покажет обновлённые хосты, а вторая поприветствует вас по имени пользователя.
 
 
 ## шаг 7
 тестируем
 
-Сначала клонируем (находясь в директории ~/code/personal)
+Сначала клонируем (находясь в директории ~/code/personal):
 
 ```bash
 git clone git@personal_gh:vysmv/github-actions.git
 ```
 
-Затем клонируем (находясь в директории ~/code/work)
+Затем клонируем (находясь в директории ~/code/work):
 
 ```bash
 git clone git@github-work:work_gh-org/work-repo.git
