@@ -8,4 +8,4 @@
 # 📘 Коллекция файлов для каждого микро гайда
 
 ## 📖 Меню
-- 📜 [Конфигурация cvs git и github для работы с двумя аккаунтами](docs/two-github-acc/video-cheat-sheet.md)
+- 📜 [Конфигурация Git и GitHub для работы с двумя аккаунтами](docs/two-github-acc/video-cheat-sheet.md)
