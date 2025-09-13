@@ -71,7 +71,22 @@ Host work_gh
   signingkey = /home/vitaliy/.ssh/id_ed25519_work_gh
 ```
 
-## Шаг 6 
+## шаг 6
+тестируем
+
+Сначала клонируем (находясь в директории ~/code/personal):
+
+```bash
+git clone git@personal_gh:vysmv/micro-guides.git
+```
+
+Затем клонируем (находясь в директории ~/code/work):
+
+```bash
+git clone git@github-work:work_gh-org/work-repo.git
+```
+
+## Шаг 7 
 > **Важно!**
 > 
 > Если до того, как мы сгенерировали новые ключи и создали новые конфиги, у нас уже были старые проекты, которые работали со старыми адресами в remote, их нужно обновить.
@@ -102,19 +117,3 @@ ssh -T personal-gh
 ```
 
 Первая команда покажет обновлённые хосты, а вторая поприветствует вас по имени пользователя.
-
-
-## шаг 7
-тестируем
-
-Сначала клонируем (находясь в директории ~/code/personal):
-
-```bash
-git clone git@personal_gh:vysmv/github-actions.git
-```
-
-Затем клонируем (находясь в директории ~/code/work):
-
-```bash
-git clone git@github-work:work_gh-org/work-repo.git
-```
